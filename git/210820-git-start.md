@@ -117,6 +117,10 @@ a	append모드, 바로 옆에서 insert
 - Apache License : 소유권을 주장할 수 있음
 - GNU : 소스를 한줄이라도 여기서 소스를 가져간다면 GPL을 사용해야함(다른 라이센스를 못씀)
 
+## branch 관리 (분기점 관리)
+- git branch “생성할 브랜치”
+- git checkout stem : stem으로 브랜치 변경/ 일반적으로 임시 브랜치에서 한 작업은 push를 하지 않음(push를 안하면 로그가 남지 않음)
+- stem이라는 브랜치에서 작업한 내용을 main 브랜치에 끌어오고싶을떄 : git merge stem
+ - main에서도 작업하고 c-test에서도 작업하면 merge시 충돌남 : vi 로 파일 열어서 충돌난 내용 확인 (1. 한쪽 브랜치 내용삭제, 2. 두 가지 내용을 적절히 병합한다) => 변경 완료후 add, commit 다시 작성(이 경우, merge 충돌 났다는 내용이 들어있음+ 어떻게 합의했는지 남겨두기)
 
-
-### 내용 정리추가로  필요함
+- git - Networ에서 제대로 실행됐는지 확인하기
