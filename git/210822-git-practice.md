@@ -20,8 +20,8 @@
 
 ## What I must improve git-skills & Questions 
 - gitignore, gitattributes 등의 기능 더 공부하기
-- 업데이트 안해도되는, 안하고싶은 파일들 히스토리 안남게하는거랑 관련있는지
+- 업데이트 대상이 아닌 파일들은 어떻게 해야하는지.(swp활용)
 - push가 안될경우 git push origin +main으로 하니까 됐는데, 안되는 이유랑 보완방법 확인
-- commit 오타 났을 경우, commit history 삭제 방법
+- commit 오타 났을 경우, commit history 삭제 방법/ 삭제는 비추, 해당 내용은 8/24 학습예정
 - git pull의 사용 방법
-- 
+- git branch를 여러개 놓고 작업하는 경우 (8/24 학습얘정)
