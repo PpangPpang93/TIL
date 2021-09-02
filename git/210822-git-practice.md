@@ -18,10 +18,5 @@
 - readme.md 업데이트하고 git init, git add, git commit, git branch -M main, git push -u origin main 등 과정을 통해 연동하기 
 
 
-## What I must improve git-skills & Questions 
 - gitignore, gitattributes 등의 기능 더 공부하기
 - 업데이트 대상이 아닌 파일들은 어떻게 해야하는지.(swp활용)
-- push가 안될경우 git push origin +main으로 하니까 됐는데, 안되는 이유랑 보완방법 확인
-- commit 오타 났을 경우, commit history 삭제 방법/ 삭제는 비추, 해당 내용은 8/24 학습예정
-- git pull의 사용 방법
-- git branch를 여러개 놓고 작업하는 경우 (8/24 학습얘정)
