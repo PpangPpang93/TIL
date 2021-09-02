@@ -22,16 +22,12 @@
 -- => 데이터의 양이 적을때 > 논리적 백업
 -- => 데이터의 양이 많고 빠른 시간안에 백업해야하는 경우 > 물리적 백업
 
-## hot logical backup 실습 : backup의 스케줄을 설정해서 백업(crontab)
--- notion, 학습자료 확인
-
-## cold physical backup 실습
--- notion, 학습자료 확인
-
 ## workbench를 이용한 백업
 -- 회사에 관련된 자료를 개발팀에 요청 > .csv
 -- csv형태로 전환 : query에서 export result로 저장 : 회사내 다른팀에서 요청하는 경우
 -- 단, excel, 한글 등에서 깨지는 경우 인코딩 방법을 알아내야
 -- sql형태로 전환 : server에서 data export로 저장
 
-
+# 해당 실습 링크 : https://heliotrope-composer-6a6.notion.site/SQL-TIP-a49d81a5c7f846b1b1ca13fa6952f123
+## hot logical backup 실습 : backup의 스케줄을 설정해서 백업(crontab)
+## cold physical backup 실습
