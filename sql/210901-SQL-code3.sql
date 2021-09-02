@@ -69,6 +69,32 @@ select B.name, B.density, D.cnt_l, group_concat(D.language) as languages
     on D.countrycode = B.code
 group by B.name, B.density, D.cnt_l;
 
+### 식 좀 더 깔끔하게
+select C.name, C.density, D.cnt_l as language_count, D.language_list
+    from
+		(
+		select code, name, round(population/surfacearea) as density
+		from country
+		where surfacearea >= 10000
+		and population/surfacearea >=200
+		) C
+	join
+		(
+		select A.countrycode, B.cnt_l, group_concat(A.language) as language_list
+			from countrylanguage A
+			join (
+					select countrycode, count(language) as cnt_l
+					from countrylanguage
+					group by countrycode
+					having cnt_l=2
+				  ) B
+			on A.countrycode = B.countrycode
+		group by countrycode
+		) D
+	on C.code = D.countrycode
+order by C.name;
+###
+
 ## view로 정리1
 create view test1 as
 select A.name, A.code, round(A.population/A.surfacearea,0) as density
