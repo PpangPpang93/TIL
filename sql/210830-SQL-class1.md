@@ -16,14 +16,14 @@
         - AWS EC2에서 서버 연동되는 과정
         - 패스워드로 사용되는 파일
 
-    - ubuntu 접속 : ssh -i ~/Downloads/ssac.pem [ubuntu@](mailto:ubuntu@52.79.214.114)13.125.121.252
+    - ubuntu 접속 : ssh -i ~/Downloads/ssac.pem [ubuntu@](mailto:ubuntu@ip주소)
         - public ip/private ip의 차이 : 외부에서 접속(외부망), 내부에서 접속(내부망)
     - ubuntu에 mysql 설치되었고, 비밀번호는 ssac으로 설정(pc에서 서버로 접속에서 서버에서 mysql실행시 암호 입력)
         - ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password
-        BY 'ssac';
+        BY '비밀번호';
     - mysql 접속해서 비밀번호 입력후, 설정변경
     - 외부에서 서버로 접속할때 패스워드 설정(설정후, restart해주기)
-        - grant all privileges on *.* to root@'%' identified by 'ssac';
+        - grant all privileges on *.* to root@'%' identified by '비밀번호';
 
 # Workbench 활용
 
