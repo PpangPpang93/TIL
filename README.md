@@ -1,6 +1,4 @@
 # TIL
-Today I Learned
-2021.09 - 현재 : 개인프로젝트로 활용 예정중인 올리브영, 이마트몰, 다이닝코드 정보 크롤링 데이터 업로드 중
 
 ## GIT
 - git의 기본사용 방법
@@ -16,5 +14,3 @@ Today I Learned
 
 ## Python - pandas 위주
 ## Pytorch, tensorflow
-## Tableau
-## Figma
